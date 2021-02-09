@@ -28,19 +28,25 @@
     "@glimmer/component": "^1.0.3",
     "@glimmer/tracking": "^1.0.3",
     "babel-eslint": "^10.1.0",
+    "bootstrap": "^4.6.0",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^1.10.1",
+    "ember-bootstrap": "^4.6.3",
+    "ember-bootstrap-changeset-validations": "^4.0.0",
+    "ember-changeset-validations": "^3.12.0",
     "ember-cli": "~3.24.0",
     "ember-cli-app-version": "^4.0.0",
     "ember-cli-babel": "^7.23.0",
     "ember-cli-dependency-checker": "^3.2.0",
     "ember-cli-htmlbars": "^5.3.1",
     "ember-cli-inject-live-reload": "^2.0.2",
+    "ember-cli-sass": "^10.0.1",
     "ember-cli-sri": "^2.1.1",
     "ember-cli-terser": "^4.0.1",
     "ember-data": "~3.24.0",
     "ember-export-application-global": "^2.0.1",
     "ember-fetch": "^8.0.2",
+    "ember-indexeddb": "^2.0.0",
     "ember-load-initializers": "^2.1.2",
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-page-title": "^6.0.3",
@@ -58,12 +64,17 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.2.1",
     "qunit": "^2.13.0",
-    "qunit-dom": "^1.6.0"
+    "qunit-dom": "^1.6.0",
+    "sass": "^1.32.6"
   },
   "engines": {
     "node": "10.* || >= 12"
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "npm": "^7.5.2",
+    "remove": "^0.1.5"
   }
 }

@@ -1,0 +1,8 @@
+<BsForm @model={{changeset this.args.user this.UserSignupDataValidation}} @onSubmit={{this.handleSubmit}} as |form|>
+    <form.element @label="First Name" @controlType="text" @property="firstName" />
+    <form.element @label="Last Name" @controlType="text" @property="lastName" />
+    <form.element @label="Email" @controlType="email" @property="emailAddress" />
+    <form.element @label="Password" @controlType="password" @property="password" />
+    <form.element @label="Confirm Password" @controlType="password" @property="passwordConfirmation" />
+    <form.submitButton>Submit</form.submitButton>
+</BsForm>

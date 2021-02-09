@@ -1,0 +1,28 @@
+{{page-title "EnrollmentApplication"}}
+{{#if @model.user.submittedApplication}}
+<h2>Completed Application <BsButton @onClick={{this.resetExperience}}>Reset Demo</BsButton>
+</h2>
+<p><strong>First Name: </strong>{{@model.user.firstName}}</p>
+<p><strong>Last Name: </strong>{{@model.user.lastName}}</p>
+<p><strong>Email Address: </strong>{{@model.user.emailAddress}}</p>
+<p><strong>Address: </strong>{{@model.user.address}}</p>
+<p><strong>Number of Children: </strong>{{@model.user.children}}</p>
+<p><strong>Personal Monthly Income: </strong>{{@model.user.personalMonthlyIncome}}</p>
+<p><strong>Household Monthly Income: </strong>{{@model.user.householdMonthlyIncome}}</p>
+<p><strong>Notes For Reviewer: </strong>{{@model.user.notesForReviewer}}</p>
+{{else}}
+<h2>Hello {{@model.firstName}}. Let's get you covered.</h2>
+<BsButton @onClick={{this.submitApplication}}>Submit Application</BsButton>
+<BsNav @type="tabs" @justified={{false}} @stacked={{false}} @fill={{false}} as |nav|>
+    <nav.item>
+        <nav.link-to @route="enrollment-application.about-you">About You</nav.link-to>
+    </nav.item>
+    <nav.item>
+        <nav.link-to @route="enrollment-application.financial-information">Financial Information</nav.link-to>
+    </nav.item>
+    <nav.item>
+        <nav.link-to @route="enrollment-application.other">Other</nav.link-to>
+    </nav.item>
+</BsNav>
+{{outlet}}
+{{/if}}

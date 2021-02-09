@@ -1,0 +1,22 @@
+{{page-title "Index"}}
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+
+        </div>
+        <div class="col-6">
+            <EligibilityForm @onSubmit={{this.determineEligibility}} />
+        </div>
+    </div>
+</div>
+
+{{#if hasEligibility}}
+<p>You have eligibility</p>
+<LinkTo @route='signup'>
+    <BsButton @type="primary">
+        Signup
+    </BsButton>
+</LinkTo>
+
+{{/if}}
+{{outlet}}

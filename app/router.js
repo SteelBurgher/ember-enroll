@@ -6,4 +6,11 @@ export default class Router extends EmberRouter {
   rootURL = config.rootURL;
 }
 
-Router.map(function () {});
+Router.map(function () {
+  this.route('signup');
+  this.route('enrollment-application', function() {
+    this.route('about-you');
+    this.route('financial-information');
+    this.route('other');
+  });
+});

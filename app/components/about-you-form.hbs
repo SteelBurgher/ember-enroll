@@ -1,0 +1,8 @@
+<BsForm @model={{changeset this.args.user this.AboutYouValidations}} @onSubmit={{this.handleSubmit}} as |form|>
+    <form.element @label="First Name" @controlType="text" @property="firstName" />
+    <form.element @label="Last Name" @controlType="text" @property="lastName" />
+    <form.element @label="Address" @controlType="text" @property="address" />
+    <form.element @label="How many children age 18 or younger live in your household?" @controlType="number"
+        @property="children" />
+    <form.submitButton>Save</form.submitButton>
+</BsForm>

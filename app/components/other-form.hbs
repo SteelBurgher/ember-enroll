@@ -1,0 +1,5 @@
+<BsForm @model={{changeset this.args.user this.OtherValidations}} @onSubmit={{this.handleSubmit}} as |form|>
+    <form.element @label="Please include a note for the application reviewer (required)" @controlType="text"
+        @property="notesForReviewer" />
+    <form.submitButton>Save</form.submitButton>
+</BsForm>

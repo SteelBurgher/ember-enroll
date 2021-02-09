@@ -1,0 +1,13 @@
+<h2>Eligibility Tool</h2>
+<BsForm @model={{changeset this.eligibilityData this.EligibilityValidations}} @onSubmit={{this.handleSubmit}} as |form|>
+    <form.element @label="How many non-pregnant adults between the ages of 19 and 64?" @controlType="number"
+        @property="pregnantAdults" />
+    <form.element @label="How many pregnant adults?" @controlType="number" @property="nonPregnantAdults" />
+    <form.element @label="How many children age 18 or younger?" @controlType="number" @property="children" />
+    <form.element
+        @label="Were you or your spouse in foster care and receiving Medicaid at age 18 or older and are currently age 26 or under?"
+        @controlType="checkbox" @property="fosterMedicaire" />
+    <form.element @label="What is your family's gross monthly income? (before taxes and deductions)"
+        @controlType="number" @property="grossMonthlyIncome" />
+    <form.submitButton>Submit</form.submitButton>
+</BsForm>

@@ -1,0 +1,8 @@
+<BsForm @model={{changeset this.args.user this.FinancialInformationValidation}} @onSubmit={{this.handleSubmit}} as
+    |form|>
+    <form.element @label="What is your personal monthly income?" @controlType="number"
+        @property="personalMonthlyIncome" />
+    <form.element @label="What is your household income, including your income" @controlType="text"
+        @property="householdMonthlyIncome" />
+    <form.submitButton>Save</form.submitButton>
+</BsForm>

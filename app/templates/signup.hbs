@@ -1,3 +1,12 @@
 {{page-title "Signup"}}
-<SignupForm @user={{@model}} @onSubmit={{this.createUser}} />
+<div class="row justify-content-center">
+    <div class="col-6">
+        <h5 class="text-dark">Based on your screen, you may be eligible for Virginia Medicaid and FAMIS plans.</h5>
+        <h5 class="text-muted">Sign up with a new account to start your online application.</h5>
+    </div>
+    <div class="col-6">
+        <SignupForm @user={{@model}} @onSubmit={{this.createUser}} />
+    </div>
+</div>
+
 {{outlet}}

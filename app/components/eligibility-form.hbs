@@ -1,4 +1,4 @@
-<h2>Eligibility Tool</h2>
+<h2 class="text-dark">Screening Tool</h2>
 <BsForm @model={{changeset this.eligibilityData this.EligibilityValidations}} @onSubmit={{this.handleSubmit}} as |form|>
     <form.element @label="How many non-pregnant adults between the ages of 19 and 64?" @controlType="number"
         @property="pregnantAdults" />
@@ -9,5 +9,5 @@
         @controlType="checkbox" @property="fosterMedicaire" />
     <form.element @label="What is your family's gross monthly income? (before taxes and deductions)"
         @controlType="number" @property="grossMonthlyIncome" />
-    <form.submitButton>Submit</form.submitButton>
+    <form.submitButton>Check Eligibility</form.submitButton>
 </BsForm>

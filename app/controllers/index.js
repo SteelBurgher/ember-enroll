@@ -8,6 +8,6 @@ export default class IndexController extends Controller {
 
   @action
   determineEligibility() {
-    this.hasEligibility = true;
+    this.transitionToRoute('signup');
   }
 }

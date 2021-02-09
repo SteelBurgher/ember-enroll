@@ -5,5 +5,5 @@ import {
 
 export default {
   personalMonthlyIncome: [validatePresence(true), validateNumber({ gte: 0 })],
-  househouldMonthlyIncome: [validatePresence(true), validateNumber({ gte: 0 })],
+  householdMonthlyIncome: [validatePresence(true), validateNumber({ gte: 0 })],
 };

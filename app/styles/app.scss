@@ -1,5 +1,8 @@
-$dark: #e04e39;
+$ember-color: #e04e39;
+$dark: $ember-color;
 $body-bg: #fffdf9;
+$nav-tabs-link-active-color: $ember-color;
+$nav-tab-link-color: #495057;
 @import 'ember-bootstrap/bootstrap';
 
 .navbar {
@@ -16,4 +19,29 @@ $body-bg: #fffdf9;
 
 .main-content-container {
   padding: 60px 20px 120px 20px;
+}
+
+.application-header {
+  border-bottom: 1px solid #999;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.nav-tabs {
+  a {
+    color: #495057;
+  }
+}
+
+.application-subform {
+  padding-top: 20px;
+}
+
+.submitted-application {
+  h2 {
+    color: $ember-color;
+  }
+  button {
+    margin-left: 60px;
+  }
 }

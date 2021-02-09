@@ -1,9 +1,9 @@
 import Component from '@glimmer/component';
 import { action } from '@ember/object';
-import FinancialInformationValidations from '../validations/financial-information';
+import FinancialInformationValidation from '../validations/financial-information';
 
 export default class FinancialInformationFormComponent extends Component {
-  FinancialInformationValidations = FinancialInformationValidations;
+  FinancialInformationValidation = FinancialInformationValidation;
 
   @action
   handleSubmit(changeset) {

@@ -2,21 +2,14 @@
 <div class="container">
     <div class="row">
         <div class="col-6">
-
+            <h1 class="text-dark ">Need Coverage?</h1>
+            <h5 class="text-muted">Use the screening tool to determine your eligibility for Virginia's Medicaid and
+                Famis programs.</h5>
+            <h5 class="text-muted">Answer all questions about your household to the best of your knowledge.</h5>
         </div>
         <div class="col-6">
             <EligibilityForm @onSubmit={{this.determineEligibility}} />
         </div>
     </div>
 </div>
-
-{{#if hasEligibility}}
-<p>You have eligibility</p>
-<LinkTo @route='signup'>
-    <BsButton @type="primary">
-        Signup
-    </BsButton>
-</LinkTo>
-
-{{/if}}
 {{outlet}}

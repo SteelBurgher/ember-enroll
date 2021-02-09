@@ -4,7 +4,7 @@ module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'ember-enroll',
     environment,
-    rootURL: '/',
+    rootURL: '/ember-enroll',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
